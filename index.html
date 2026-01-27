@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpsClad Demo</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Phone input -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.2/build/css/intlTelInput.min.css"/>
+
+  <!-- Calendly -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">DataClad</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Platforms & AI</a>
+    <a href="#">Success Stories</a>
+    <a href="#">Industries</a>
+    <a href="#">Careers</a>
+    <a href="#">Contact Us</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <section class="content">
+    <img src="images/OpsClad Logo - Transparent.png" class="brand-logo" alt="OpsClad">
+
+    <h1>
+      Smarter <span class="highlight">HR</span>.<br>
+      Built to Scale with OpsClad
+    </h1>
+
+    <p class="subtitle">
+      Smarter HR workflows,Centralized data,Clear insight.<br>
+      See how OpsClad works.
+    </p>
+
+    <ul class="features">
+      <li><strong>All your HR data, in one place</strong><br>Employee records,documents,and workflows-- structured,secure,and easy to manage.</li>
+      <li><strong>Automated workflows that save time</strong><br>Reduce manual effort across onboarding,operations,and everyday HR tasks.</li>
+      <li><strong>Insights that supports better decisions</strong><br>Turn HR data into clear,actionable insights for workforce planning and growth.</li>
+    </ul>
+  </section>
+
+  <section class="form-card">
+    <h3>See <span class="highlight">OpsClad</span> in Action</h3>
+
+    <form id="demoForm">
+
+      <label>Name*</label>
+      <input type="text" id="name" required>
+
+      <label>Work Email*</label>
+      <input type="email" id="email" required>
+
+      <label>Company Name*</label>
+      <input type="text" id="company" required>
+
+      <label>Phone Number*</label>
+      <input type="tel" id="phone" required>
+
+      <label>Company Size*</label>
+      <select id="companySize" required>
+        <option value="">Select company size</option>
+        <option>1–10</option>
+        <option>11–50</option>
+        <option>51–200</option>
+        <option>200+</option>
+      </select>
+
+     <button type="submit" class="cta-btn" id="scheduleDemoBtn">
+  Schedule My Personalized Demo
+</button>
+
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>© 2026 DataClad, Inc.</div>
+    <div>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.2/build/js/intlTelInput.min.js"></script>
+<script src="validation.js"></script>
+
+</body>
+  <!-- intl-tel-input JS -->
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.2/build/js/intlTelInput.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.5.2/build/js/utils.js"></script>
+
+  <!--JS -->
+  <script src="validation.js"></script>
+
+  
+  <script>
+    document.getElementById("demoForm").addEventListener("submit", function (e) {
+      if (!this.checkValidity()) {
+        this.reportValidity(); // show validation errors
+        return;
+      }
+
+      e.preventDefault(); 
+
+      // Redirect to Calendly
+      window.location.href =
+        "https://calendly.com/nashmiareemaz17/30min";
+    });
+  </script>
+
+</body>
+</html>
+
+</html>
